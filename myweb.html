@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Aditya Bandagar | Personal Website</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to right, #4e73df, #1cc88a);
+            color: white;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        .profile-img {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .card {
+            background: rgba(0,0,0,0.3);
+            padding: 25px;
+            margin: 20px 0;
+            border-radius: 15px;
+        }
+
+        h1, h2 {
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 6px 0;
+        }
+
+        input, textarea {
+            width: 90%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 5px;
+            border: none;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background: white;
+            color: #4e73df;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ddd;
+        }
+
+        footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: rgba(0,0,0,0.4);
+        }
+
+        @media (max-width: 600px) {
+            .profile-img {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <img src="profile.jpg" class="profile-img">
+    <h1>Aditya Bandagar</h1>
+    <p><strong>Age:</strong> 18</p>
+    <p><strong>College:</strong>satara polytechnic satara</p>
+    <p><strong>Department:</strong> Computer Enginnering</p>
+    <p><strong>Phone:</strong> 8080787377</p>
+</header>
+
+<div class="container">
+
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            Hello! 👋 I'm Aditya Bandagar, a passionate Computer Science student.
+            I enjoy coding, creating websites, and learning new technologies.
+            My goal is to become a professional software developer and build powerful digital solutions.
+        </p>
+    </div>
+
+    <div class="card">
+        <h2>Skills</h2>
+        <p>C Programming | c++ | HTML | JAVA | Web Design</p>
+    </div>
+
+    <div class="card">
+        <h2>Contact Me 📧</h2>
+
+        <!-- EMAIL AUTO SEND FORM -->
+        <form action="https://formsubmit.co/adityabandagar7@gmail.com" method="POST">
+
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_subject" value="New Message From Website">
+
+            <input type="text" name="name" placeholder="Your Name" required>
+
+            <input type="email" name="email" placeholder="Your Email" required>
+
+            <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Aditya Bandagar | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
